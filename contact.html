@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-	<img src="images/logo.jpg" align="left" width="10%" height="5%"></img>
+	<img src="images/logo.png" align="left" width="10%" height="5%"></img>
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<meta charset="utf-8">
 		<!-- 
         Awesome Template
         http://www.templatemo.com/preview/templatemo_450_awesome
         -->
-		<title>St. Patrick's High School</title>
+		<title>Kisumu School Website</title>
 		<meta name="keywords" content="">
 		<meta name="description" content="">
 		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
@@ -41,14 +41,14 @@
 
         <!-- start header -->
         <header>
-			<h1 style="font-family:algerian; font-size:40px; color:teal;">ST.PATRICK'S HIGH SCHOOL(SPHS).</h1>
+			<h1 style="font-family:algerian; font-size:40px; color:teal;">KISUMU BOYS' HIGH SCHOOL(KB).</h1>
             <div class="container">
                 <div class="row">
                     <div class="col-md-3 col-sm-4 col-xs-12">
                         <p><i class="fa fa-phone"></i><span> Phone</span>0722200493</p>
                     </div>
                     <div class="col-md-3 col-sm-4 col-xs-12">
-                        <p><i class="fa fa-envelope-o"></i><span> Email</span><a href="mailto:giridesigns5@gmail.com">stpatrick's@gmail.com</a></p>
+                        <p><i class="fa fa-envelope-o"></i><span> Email</span><a href="mailto:giridesigns5@gmail.com">kisumuschool@gmail.com</a></p>
                     </div>
                     <div class="col-md-5 col-sm-4 col-xs-12">
                         <ul class="social-icon">
@@ -70,7 +70,7 @@
       <i class="fa fa-caret-down"></i>
     </button>
     <div class="dropdown-content">
-	<u style="color:black;"><p style="color:blue;">ABOUT ST. PATRICK'S HIGH SCHOOL</p></u> 
+	<u style="color:black;"><p style="color:blue;">ABOUT KISUMU SCHOOL</p></u> 
 	 <a href="profile.html">Our Profile</a>
 	 <a href="history.html">Our history</a>
 	 <a href="vmv.html">Vision,Mision and Values</a>
@@ -117,78 +117,59 @@
    <a href="contact.html">CONTACT</a>
 </div>
 </div>
-    	<section id="home">
-    		<div class="container">
-    			<div class="row">
-    				<div class="col-md-offset-2 col-md-8">
-    					<h1 class="wow fadeIn" data-wow-offset="50" data-wow-delay="0.9s"><span>ST. PATRICK'S(SPHS).</span></h1>
-    					<div class="element">
-                            <div class="sub-element">MOTTO:EXELLENCE IN ALL ENDEVALOUS.</div>
-                            <div class="sub-element">VISSION:</div>
-                            <div class="sub-element">MISSION:</div>
-							<div class="sub-element">CORE VALUES:</div>
-                        </div>
-    					<a data-scroll href="#about" class="btn btn-default wow fadeInUp" data-wow-offset="50" data-wow-delay="0.6s">GET STARTED</a>
-    				</div>
-    			</div>
-    		</div>
-    	</section>
-<div   style="max-width:100%">
+		
+<div class="container3">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <img id="expandedImg" style="width:100%">
+  <div id="imgtext"></div>
 </div>
-  <span class="dot"></span> 
-  <span class="dot"></span> 
-  <span class="dot"></span> 
-  <span class="dot"></span>
-  <span class="dot"></span>
-   <span class="dot"></span>
-   <span class="dot"></span>
-    <span class="dot"></span>
-	<span class="dot"></span>
-	<span class="dot"></span>
-	<span class="dot"></span>
-</div>
-<script>
-var slideIndex = 0;
-showSlides();
 
-function showSlides() {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}    
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-  setTimeout(showSlides, 5000); // Change image every 2 seconds
+<script>
+function myFunction(imgs) {
+  var expandImg = document.getElementById("expandedImg");
+  var imgText = document.getElementById("imgtext");
+  expandImg.src = imgs.src;
+  imgText.innerHTML = imgs.alt;
+  expandImg.parentElement.style.display = "block";
 }
 </script>
+				
+				<!--<h2>Responsive Contact Section</h2>
+<p>Resize the browser window to see the effect.</p>-->
 
-<div class="row">
-	<div class="side">
-		<div class="div-1">
-		<u><h4 style="background-color:black;">
-			Quick Links
-			<li> <a href="index.html">home</a></li><hr>
-				<li><a href="contact.html">contact</a></li><hr>
-				</ul></h4></u>
-			</div>
-			</div>
-		<div class="main">
-			<h6 style="color:teal; font-size:25px;">ENJOY ST. PATRICK'S WEB</h6>
-			<div class="fakeimg" style="height:350px;"><img src="images/6.jpg" style="width:34%;" height="91%"> <img src="images/7.jpg" style="width:31%;" height="91%"> <img src="images/9.jpg" style="width:34%" height="91%"></div>
-			<p>In Elgeyo Marakwet county,Near the member of county assembly.</p>
-			</div>
-			</div>
-			
 
-<div class="footer">
-designed and developed by E.O.BARASA
+    <div class="column5">
+      <img src="images/10.jpeg" style="width:100%">
+    </div>
+    <div class="column5">
+      <form action="/action_page.php">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        <label for="country">County</label>
+        <select id="country" name="country">
+          <option value="australia">Kanairo</option>
+          <option value="canada">Bungoma</option>
+          <option value="usa">Eldoret</option>
+		  <option value="usa">Busia</option>
+      <option value="usa">webuye</option>
+      <option value="usa">kisumu</option>
+      <option value="usa">nakuru</option>
+        </select>
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+        <input type="submit" value="Submit">
+		<div class="row">
+ <div class="column3">
+    <img src="images/10.jpeg" alt="Nature" style="width:50%" onclick="myFunction(this);">	 <h2 color="white">0726619465</h2>
+  </div>
+      </form>
+    </div>
+  </div>
+  <div class="footer">
+<img src="images/download.jfif" style="width:2%">:kisumuschool@gmail.com <br>
+designed and developed by kisumu school
 </div>
 </body>
 </html>
